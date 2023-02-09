@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        div{
+            width: 400px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-top: -10px; 
+            margin-left:5px; 
+            margin-bottom:0px; 
+            background-color: white; 
+            width: fit-content;
+        }
+    </style>
+</head>
+    <body>
+        <form>
+            <div>
+                <p>Log In Information</p>
+                <table>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" name="username" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="text" name="password" id="password" required></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>Personal Information</p>
+                <table>
+                    <tr>
+                        <td><label for="position">Position:</label></td>
+                        <td>
+                            <select id="position">
+                                <option value="Engineer">Engineer</option>
+                                <option value="Administrator">Administrator</option>
+                                <option value="Nurse">Nurse</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td>
+                            <input type="radio" name="gender" id="gender" value="male" required>Male
+                            <input type="radio" name="gender" id="gender" value="female" required>Female
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td><label for="contactPreference">Contact Preference:</label></td>
+                        <td>
+                            <input type="checkbox" name="contactPreference" id="contactPreference" value="email">E-Mail
+                            <input type="checkbox" name="contactPreference" id="contactPreference" value="phone">Phone
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="picture">Picture:</label></td>
+                        <td><input type="file" name="picture" id="picture"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birthday">Date of Birth:</label></td>
+                        <td><input type="date" name="birthday" id="birthday" required></td>
+                    </tr>
+                </table>
+            </div>
+            <button type="submit" style="margin-right: 50px;">Submit</button>
+            <a href="assignment1home.html">Return</a>
+        </form>
+    </body>
+</html>
